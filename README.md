@@ -1,6 +1,8 @@
 # wildfly-keycloak-microprofile
 Wildfly Docker image for Java EE microservices with Keycloak, Microprofile and an optional PostgreSQL data source. Allows easy setup of your docker container at first startup.
 
+[![Automated Docker Build](https://img.shields.io/docker/automated/fuinorg/wildfly-keycloak-microprofile.svg)](https://hub.docker.com/r/fuinorg/wildfly-keycloak-microprofile/)
+
 ## Features
 
 - **Protect your JEE microservice or application with the Wildfly Keycloak Adapter**
