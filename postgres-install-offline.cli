@@ -1,0 +1,4 @@
+embed-server --server-config=${server.config:standalone.xml}
+module add --name=org.postgres --resources=${postgresJarFile} --dependencies=javax.api,javax.transaction.api
+/subsystem=datasources/jdbc-driver=postgresql:add(driver-name="postgresql",driver-module-name="org.postgres",driver-class-name=org.postgresql.Driver)
+data-source add --name=${postgresDatasource} --jndi-name=java:jboss/datasources/${postgresDatasource} --connection-url=jdbc:postgresql://${postgresHost}:${postgresPort}/${postgresDB} --driver-name=postgresql --user-name=${postgresUser} --password=${postgresPw} 
