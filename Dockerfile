@@ -51,11 +51,6 @@ COPY getopts_long.sh $JBOSS_HOME
 COPY utils.sh $JBOSS_HOME
 COPY startup.sh $JBOSS_HOME
 
-# BEGIN WFLY-10961 PART 1
-COPY WFLY-10961/jaeger-core-module.xml $JBOSS_HOME/modules/system/layers/base/io/jaegertracing/jaeger-core/main/module.xml
-COPY WFLY-10961/opentracing-smallrye-module.xml $JBOSS_HOME/modules/system/layers/base/org/wildfly/microprofile/opentracing-smallrye/main/module.xml 
-# END WFLY-10961 PART 1
-
 WORKDIR $JBOSS_HOME
 
 # Change owner/group of all files to jboss
@@ -67,11 +62,6 @@ RUN chown jboss:jboss bin/microprofile-health-smallrye-install-offline.cli \
  && chown jboss:jboss init-wildfly-mgmt-services.sh \
  && chown jboss:jboss init-logstash-gelf-logging.sh \
  && chown jboss:jboss $LOGSTASH_GELF_TAR_GZ \
-# BEGIN WFLY-10961 PART 2
- && chown jboss:jboss modules/system/layers/base/io/jaegertracing/jaeger-core/main/module.xml \
- && chown jboss:jboss modules/system/layers/base/org/wildfly/microprofile/opentracing-smallrye/main/module.xml \
- && cp modules/system/layers/base/io/jaegertracing/jaeger-thrift/main/jaeger-thrift-0.30.6.jar modules/system/layers/base/io/jaegertracing/jaeger-core/main/ \
-# END WFLY-10961 PART 2
  && chown jboss:jboss getopts_long.sh \
  && chown jboss:jboss utils.sh \
  && chown jboss:jboss startup.sh
