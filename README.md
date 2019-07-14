@@ -3,6 +3,11 @@ Wildfly Docker image for Java EE microservices with Keycloak, Microprofile and a
 
 [![Automated Docker Build](https://img.shields.io/docker/automated/fuinorg/wildfly-keycloak-microprofile.svg)](https://hub.docker.com/r/fuinorg/wildfly-keycloak-microprofile/)
 
+## Versions
+- Wildfly Base Image: 16.0.0.Final
+- Keycloak Adapter: 6.0.1
+- logstash-gelf: 1.12.0
+
 ## Features
 
 - **Protect your JEE microservice or application with the Wildfly Keycloak Adapter**

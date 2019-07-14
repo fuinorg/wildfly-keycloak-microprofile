@@ -1,4 +1,4 @@
-FROM jboss/wildfly:14.0.1.Final
+FROM jboss/wildfly:16.0.0.Final
 MAINTAINER fuin.org
 
 # Environment variables to pass on RUN
@@ -35,7 +35,7 @@ ENV JSON_LOG_DYNAMIC_MDC_FIELDS=
 ENV JSON_LOG_INCLUDE_FULL_MDC=
 
 # Internal variables
-ARG KEYCLOAK_VERSION=4.5.0.Final
+ARG KEYCLOAK_VERSION=6.0.1
 ARG LOGSTASH_GELF_VERSION=1.12.0
 ARG LOGSTASH_GELF_TAR_GZ=logstash-gelf-$LOGSTASH_GELF_VERSION-logging-module.tar.gz
 
