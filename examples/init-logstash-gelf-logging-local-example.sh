@@ -6,7 +6,7 @@
 ./init-logstash-gelf-logging.sh \
   --wildflyHome="/home/developer/Downloads/wildfly-14.0.1.Final" \
   --lglVersion="1.1" \
-  --lglHost="localhost" \
+  --lglHost="udp:localhost" \
   --lglPort=12201 \
   --lglFacility="java-test" \
   --lglFields="Time, Severity,ThreadName,SourceClassName,SourceMethodName,SourceSimpleClassName,LoggerName,NDC,Server" \

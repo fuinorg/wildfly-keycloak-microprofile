@@ -4,7 +4,7 @@
 
 # Define parameters with defaults
 wildflyHome=
-lglHost="localhost"
+lglHost="udp:localhost"
 lglPort=12201
 lglFacility=
 lglVersion="1.0"
