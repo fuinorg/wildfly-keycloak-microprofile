@@ -5,7 +5,7 @@
 
 ./init-postgres.sh \
   --wildflyHome=/home/developer/Downloads/wildfly-14.0.1.Final \
-  --postgresVersion=42.2.5 \ 
+  --postgresVersion=42.2.5 \
   --postgresDB=mydb \
   --postgresDatasource=MYDS \
   --postgresPassword=secret \
