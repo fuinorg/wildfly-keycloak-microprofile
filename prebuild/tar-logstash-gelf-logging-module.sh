@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Downloads a version from http://central.maven.org/maven2/biz/paluch/logging/logstash-gelf
+# Downloads a version from https://repo1.maven.org/maven2/biz/paluch/logging/logstash-gelf
 # and creates a tar file from it that can be installed directly into Wildfly 14 
 
 logstashGelfVersion=1.12.0
@@ -16,7 +16,7 @@ else
 echo "Execute logstash-gelf-logging task... (tar.gz file already exists)"
   mkdir -p $basePath
   cd $basePath
-  curl -L http://central.maven.org/maven2/biz/paluch/logging/logstash-gelf/$logstashGelfVersion/$zipFile -o $zipFile
+  curl -L https://repo1.maven.org/maven2/biz/paluch/logging/logstash-gelf/$logstashGelfVersion/$zipFile -o $zipFile
   unzip $zipFile
   rm $zipFile
   mv logstash-gelf-$logstashGelfVersion/biz biz

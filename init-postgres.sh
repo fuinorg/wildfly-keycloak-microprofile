@@ -119,7 +119,7 @@ touch $initPostgresDoneFile
 
 # Download PostgreSQL JAR file
 postgresJarFile=$wildflyHome/postgresql-$postgresVersion.jar
-curl -L -o $postgresJarFile http://central.maven.org/maven2/org/postgresql/postgresql/$postgresVersion/postgresql-$postgresVersion.jar
+curl -L -o $postgresJarFile https://repo1.maven.org/maven2/org/postgresql/postgresql/$postgresVersion/postgresql-$postgresVersion.jar
 
 # Fallback for usage outside of Docker container
 postgresCliFile=$wildflyHome/bin/postgres-install-offline.cli
