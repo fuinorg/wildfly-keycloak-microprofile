@@ -27,8 +27,8 @@ Wildfly Docker image for Java EE microservices with Keycloak, Microprofile and a
 
 As a standard feature of Wildfly 14+ you can also use:
 
-- **MicroProfile Config Feature** (See [Wildfly Admin Guide MicroProfile Config SmallRye](http://docs.wildfly.org/14/Admin_Guide.html#MicroProfile_Config_SmallRye))
-- **MicroProfile OpenTracing Feature** (See [Wildfly Admin Guide MicroOrofile OpenTracing SmallRye](http://docs.wildfly.org/14/Admin_Guide.html#MicroProfile_OpenTracing%20SmallRye))
+- **MicroProfile Config Feature** (See [Wildfly Admin Guide MicroProfile Config SmallRye](https://docs.wildfly.org/14/Admin_Guide.html#MicroProfile_Config_SmallRye))
+- **MicroProfile OpenTracing Feature** (See [Wildfly Admin Guide MicroOrofile OpenTracing SmallRye](https://docs.wildfly.org/14/Admin_Guide.html#MicroProfile_OpenTracing%20SmallRye))
 
 ## TODO
 
